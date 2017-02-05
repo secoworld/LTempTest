@@ -1,9 +1,13 @@
 
 树莓派 使用DHT11测量室内温度、湿度，通过OLED进行显示。并且上传到onenet云平台，进行在线的显示。
 
-1.
-
-
+1.使用方法
+	
+	git clone https://github.com/secoworld/LTempTest.git
+	cd LTempTest
+	make
+	./test
+	
 2.连接方式：
 
 	1.DHT11 
