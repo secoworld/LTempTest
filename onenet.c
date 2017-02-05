@@ -6,13 +6,13 @@
 */
 
 //HTTP报文,pkt为字符串缓存，key为api-key密钥，devid为设备号，dsid为上传数据的名称，val为要上传数据的值
-uint32_t HTTP_PostPkt(char *pkt, char *key, char *devid, char *dsid, char *val,char *dsid1, char *val1)
+uint32_t HTTP_PostPkt(char *pkt, char *key, char *devid, char *dsid, char *val,char *dsid1, char *val1,char *dsid2, char *val2)
 {
 	char dataBuf[100] = {0};
 	char lenBuf[10] = {0};
 	*pkt = 0;
 
-	sprintf(dataBuf, ",;%s,%s;%s,%s", dsid, val,dsid1, val1); //采用分割字符串格式:type = 5
+	sprintf(dataBuf, ",;%s,%s;%s,%s;%s,%s", dsid, val,dsid1, val1,dsid2, val2); //采用分割字符串格式:type = 5
 	sprintf(lenBuf, "%d", strlen(dataBuf));
 
 	strcat(pkt, "POST /devices/");

@@ -20,7 +20,7 @@
 
 #include "include.h"
 
-uint32_t HTTP_PostPkt(char *pkt, char *key, char *devid, char *dsid, char *val,char *dsid1, char *val1);
+uint32_t HTTP_PostPkt(char *pkt, char *key, char *devid, char *dsid, char *val,char *dsid1, char *val1,char *dsid2, char *val2);
 int socket_statr(void);
 void socket_close(int socke);
 

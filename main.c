@@ -60,7 +60,7 @@ int main(void)
     printf("The humi is %d.%d  RH\r\n",humi,humi1);
 	
 	
-	len=HTTP_PostPkt(HTTP_Buf,APi,Id,"dht11_temp",tempStr,"dht11_humi",humiStr);
+	len=HTTP_PostPkt(HTTP_Buf,APi,Id,"dht11_temp",tempStr,"dht11_humi",humiStr,"pi3_cpu_temp",pitempStr);
 	write(socke1,HTTP_Buf,len);   //write to https
 	
 	socket_close(socke1);
