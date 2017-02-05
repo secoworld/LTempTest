@@ -6,7 +6,7 @@
 
 2.连接方式：
 	1.DHT11 
-		的Data端，通过使用dht11_pin_init来确定引脚端口
+		DHT11的Data端，通过使用dht11_pin_init来确定引脚端口
 			dht11_pin_init(uchar pins);
 	
 	2.OLED:
@@ -16,6 +16,8 @@
 
 3.使用环境：
 	1.使用的是wiringPi，必须安装好wiringPi。
+	
+	
 		git clone git://git.drogon.net/wiringPi
 		cd wiringPi
 		git pull origin
